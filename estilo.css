@@ -1,0 +1,52 @@
+  @import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Handjet', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+.calculadora{
+    position: relative;
+    display: grid;
+}
+.valor{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.5em;
+}
+span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: yellow;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0,0,0, 0.1);
+}
+span:active{
+    background: limegreen;
+    color:#000;
+}
+span.apagar{
+    grid-column: span 2;
+    width: 120px;
+    background: magenta;
+}
+span.soma{
+    grid-row: span 2;
+    height: 120px;
+}
+span.igual{
+    background: dodgerblue;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="calc.png" type="image/x-icon">
+    <title>CACULADORA</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form class="calculadora" name="calculo">
+        <input type="text" class="valor" name="txt" readonly>
+        <span class="num apagar" onclick="document.calculo.txt.value=''">C</span>
+        <span class="num" onclick="document.calculo.txt.value+='/'">/</span>
+        <span class="num" onclick="document.calculo.txt.value+='*'">X</span>
+        <span class="num" onclick="document.calculo.txt.value+='7'">7</span>
+        <span class="num" onclick="document.calculo.txt.value+='8'">8</span>
+        <span class="num" onclick="document.calculo.txt.value+='9'">9</span>
+        <span class="num" onclick="document.calculo.txt.value+='-'">-</span>
+        <span class="num" onclick="document.calculo.txt.value+='4'">4</span>
+        <span class="num" onclick="document.calculo.txt.value+='5'">5</span>
+        <span class="num" onclick="document.calculo.txt.value+='6'">6</span>
+        <span class="num soma" onclick="document.calculo.txt.value+='+'">+</span>
+        <span class="num" onclick="document.calculo.txt.value+='3'">3</span>
+        <span class="num" onclick="document.calculo.txt.value+='2'">2</span>
+        <span class="num" onclick="document.calculo.txt.value+='1'">1</span>
+        <span class="num" onclick="document.calculo.txt.value+='0'">0</span>
+        <span class="num" onclick="document.calculo.txt.value+='00'">00</span>
+        <span class="num" onclick="document.calculo.txt.value+='. '">.</span>
+
+        <span class="num igual" onclick="document.calculo.txt.value= eval(calculo.txt.value)">=</span>
+
+
+    </form>
+</body>
+</html>
